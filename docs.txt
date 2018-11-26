@@ -1,0 +1,7 @@
+This document descripe various terms and codes of response with their meanings
+
+
+/////////////// Meta - code ////////////////
+0 	=> 	fail/invalid/error
+1	=>	ok/success/done.
+4	=> 	resource not found.

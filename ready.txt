@@ -1,0 +1,113 @@
+This document contains the available api end-points with their documentations
+
+--------------------------------------------------------------------------------------
+1 - Main/Major Departments
+
+url: 	'/api/v1/departments/'
+method:	GET
+param:	none
+output: application/json
+Example:
+	{
+		"data":
+			[
+				{
+					"id": integer,
+					"name_ar": String,
+					"name_en": String,
+					"name_fr": String,
+					"icon": String
+				},
+				{
+					"id": integer,
+					"name_ar": String,
+					"name_en": String,
+					"name_fr": String,
+					"icon": String
+				}
+			],
+
+		"meta":
+			{
+				"code": Integer,
+				"status": String,
+				"message": String
+			}
+	}
+
+------------------------------------------------------------------------------------
+2 - Sub Departments of Specified Main Department
+
+url: 	'/api/v1/department/{major_department_id}/sub-departments/'
+method:	GET
+param:	none
+output: application/json
+Example:
+	{
+		"data":
+			[
+				{
+					"id": integer,
+					"name_ar": String,
+					"name_en": String,
+					"name_fr": String,
+					"icon": String
+				},
+				{
+					"id": integer,
+					"name_ar": String,
+					"name_en": String,
+					"name_fr": String,
+					"icon": String
+				}
+			],
+
+		"meta":
+			{
+				"code": Integer,
+				"status": String,
+				"message": String
+			}
+	}
+
+
+------------------------------------------------------------------------------------
+3 - Problems of Specified Sub Department
+
+url: 	'/api/v1/sub-department/{sub_department_id}/problems/'
+method:	GET
+param:	none
+output: application/json
+Example:
+	{
+		"data":
+			[
+				{
+					"id": integer,
+					"name_ar": String,
+					"name_en": String,
+					"name_fr": String,
+					"price": String // Price casted to string becouse floating points
+					"commission": Integer
+					"min_allowed_balance": String // casted to string becouse floating points
+					"icon": String
+				},
+				{
+					"id": integer,
+					"name_ar": String,
+					"name_en": String,
+					"name_fr": String,
+					"price": String // Price casted to string becouse floating points
+					"commission": Integer
+					"min_allowed_balance": String // casted to string becouse floating points
+					"icon": String
+				}
+			],
+
+		"meta":
+			{
+				"code": Integer,
+				"status": String,
+				"message": String
+			}
+	}
