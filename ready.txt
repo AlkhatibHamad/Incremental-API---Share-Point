@@ -111,3 +111,103 @@ Example:
 				"message": String
 			}
 	}
+
+
+--------------------------------------------------------------------------------------
+4 - States (States of the sudan)
+
+url: 	'/api/v1/states/'
+method:	GET
+param:	none
+output: application/json
+Example:
+	{
+		"data":
+			[
+				{
+					"id": integer,
+					"name_ar": String,
+					"name_en": String,
+					"name_fr": String,
+				},
+				{
+					"id": integer,
+					"name_ar": String,
+					"name_en": String,
+					"name_fr": String,
+				}
+			],
+
+		"meta":
+			{
+				"code": Integer,
+				"status": String,
+				"message": String
+			}
+	}
+
+--------------------------------------------------------------------------------------
+5 - Locals of the specified State
+
+url: 	'/api/v1/state/{state_id}/locals'
+method:	GET
+param:	none
+output: application/json
+Example:
+	{
+		"data":
+			[
+				{
+					"id": integer,
+					"name_ar": String,
+					"name_en": String,
+					"name_fr": String,
+				},
+				{
+					"id": integer,
+					"name_ar": String,
+					"name_en": String,
+					"name_fr": String,
+				}
+			],
+
+		"meta":
+			{
+				"code": Integer,
+				"status": String,
+				"message": String
+			}
+	}
+
+--------------------------------------------------------------------------------------
+5 - Quarters of the specified Local (Last user address)
+
+url: 	'/api/v1/local/{local_id}/quarters'
+method:	GET
+param:	none
+output: application/json
+Example:
+	{
+		"data":
+			[
+				{
+					"id": integer,
+					"name_ar": String,
+					"name_en": String,
+					"name_fr": String,
+				},
+				{
+					"id": integer,
+					"name_ar": String,
+					"name_en": String,
+					"name_fr": String,
+				}
+			],
+
+		"meta":
+			{
+				"code": Integer,
+				"status": String,
+				"message": String
+			}
+	}
